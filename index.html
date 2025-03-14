@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Office Supplies & Accessories</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+</head>
+
+<body>
+
+    <div class="overlay" id="overlay"></div>
+
+    <!-- Header Section -->
+    <header class="header">
+        <div class="logo">
+            <img src="images/logo.png" alt="Company Logo">
+        </div>
+
+        <!-- Navigation -->
+        <nav class="nav" id="nav">
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#why-choose-us">Why Choose Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <!-- Sign In & Sign Up Buttons -->
+            <div class="auth-buttons">
+                <a href="sign-in.html" class="sign-in">Sign In</a>
+                <a href="sign-up.html" class="sign-up">Sign Up</a>
+            </div>
+        </nav>
+
+        <!-- Menu Icon (for Mobile) -->
+        <button class="menu-toggle" id="menu-toggle">
+            <i class="bx bx-menu"></i>
+        </button>
+    </header>
+
+    <!-- Home Section -->
+    <section class="home">
+        <div class="overlay"></div>
+        <div class="home-content">
+            <h1>Your One-Stop Solution for Office Equipment & Computer Accessories</h1>
+            <p>We provide high-quality office furniture, computer accessories, and essential office supplies at unbeatable prices. Whether you're upgrading your workspace or setting up a new office, we've got everything you need.</p>
+            <a href="#shop" class="btn">Shop Now</a>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="about">
+        <div class="about-container">
+            <!-- Image Section -->
+            <div class="about-image">
+                <img src="images/about.jpg" alt="Our Warehouse">
+            </div>
+
+            <!-- Text Content Section -->
+            <div class="about-content">
+                <h2>Who We Are</h2>
+                <p>We are a trusted supplier of office equipment and computer accessories, dedicated to enhancing workplace efficiency and comfort. Our mission is to provide top-tier products with outstanding customer service, ensuring businesses and individuals
+                    can access the best office solutions at affordable prices.</p>
+
+                <h3>Why Choose Us?</h3>
+                <ul>
+                    <li>✅ <strong>Quality Products</strong> – We source from top brands to guarantee durability and performance.</li>
+                    <li>✅ <strong>Competitive Prices</strong> – Get the best deals without compromising on quality.</li>
+                    <li>✅ <strong>Reliable Delivery</strong> – Fast and secure shipping ensures you get your products on time.</li>
+                    <li>✅ <strong>Excellent Support</strong> – Our team is available to assist you with all your office supply needs.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products">
+        <h2>Explore Our Products</h2>
+        <p>Browse our extensive selection of office supplies, computer accessories, and workplace essentials. Use the search bar or filter options to find exactly what you need.</p>
+
+        <!-- Search and Filter -->
+        <div class="product-controls">
+            <input type="text" id="search-bar" placeholder="Search for products..." onkeyup="searchProducts()">
+            <select id="category-filter" onchange="filterProducts()">
+                <option value="all">All Categories</option>
+                <option value="furniture">Office Furniture</option>
+                <option value="computers">Computers & Accessories</option>
+                <option value="printers">Printers & Scanners</option>
+                <option value="networking">Networking & Storage</option>
+            </select>
+        </div>
+
+        <!-- Product Grid -->
+        <div class="product-grid" id="product-list">
+            <!-- Products will be dynamically added here -->
+        </div>
+    </section>
+
+
+    <section class="why-choose-us">
+        <div class="container">
+            <div class="content">
+                <h2>Why Choose Us?</h2>
+                <ul>
+                    <li>🛒 <strong>Wide Product Range</strong> – From office essentials to high-end computer accessories, we’ve got it all.</li>
+                    <li>💰 <strong>Affordable Pricing</strong> – We offer competitive prices with great discounts.</li>
+                    <li>🚚 <strong>Fast & Reliable Delivery</strong> – Get your orders delivered safely and on time.</li>
+                    <li>📞 <strong>24/7 Customer Support</strong> – Our team is always ready to assist with your inquiries.</li>
+                    <li>🛠 <strong>Warranty & After-Sales Service</strong> – We stand by our products and offer support when needed.</li>
+                </ul>
+            </div>
+            <div class="image">
+                <img src="images/customer-service.jpg" alt="Customer Support Team">
+            </div>
+        </div>
+    </section>
+
+
+    <section class="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <p>We don’t just sell products; we ensure you get the best experience through our comprehensive services:</p>
+            <div class="services-grid">
+                <div class="service">
+                    <img src="images/bulky orders.jpg" alt="Bulk Orders">
+                    <h3>🔹 Bulk Orders & Corporate Supply</h3>
+                    <p>Need office equipment in large quantities? We offer customized bulk pricing.</p>
+                </div>
+                <div class="service">
+                    <img src="images/installation.jpg" alt="Installation Assistance">
+                    <h3>🔹 Installation & Setup Assistance</h3>
+                    <p>Get expert help with setting up office furniture and computer accessories.</p>
+                </div>
+                <div class="service">
+                    <img src="images/repair.jpg" alt="Maintenance Services">
+                    <h3>🔹 Maintenance & Repair Services</h3>
+                    <p>We provide troubleshooting, maintenance, and repair services for office equipment.</p>
+                </div>
+                <div class="service">
+                    <img src="images/consultation.jpg" alt="Consultation">
+                    <h3>🔹 Consultation & Recommendations</h3>
+                    <p>Not sure what products suit your business? Our experts can guide you to the best choices.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="contact">
+        <h2>Get in Touch</h2>
+        <p>Need assistance or have inquiries? We’d love to hear from you! Fill out the form below, and our team will get back to you as soon as possible.</p>
+
+        <div class="contact-container">
+            <!-- Contact Form -->
+            <div class="contact-form">
+                <h3>Contact Us</h3>
+                <form id="contact-form">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+
+            <!-- Contact Details & Google Map -->
+            <div class="contact-details">
+                <h3>Our Contact Information</h3>
+                <p>📍 <strong>Address:</strong> P.O Box 61612 CITY Square, Aga Khan Walk</p>
+                <p>📞 <strong>Phone:</strong> <a href="tel:+254701085375">+254 701085375</a></p>
+                <p>📧 <strong>Email:</strong> <a href="mailto:support@officesupplies.com">support@officesupplies.com</a></p>
+                <p>⏳ <strong>Business Hours:</strong> Mon-Fri: 9:00 AM – 6:00 PM | Sat-Sun: Closed</p>
+
+                <!-- Google Map Embed -->
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15955.37828547407!2d36.8155!3d-1.286389!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f172d8bbf4c1f%3A0xc4e06522a6d7a5bf!2sAga%20Khan%20Walk%2C%20Nairobi!5e0!3m2!1sen!2ske!4v1712345678901"
+                        width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Company Info -->
+                <div class="footer-section about">
+                    <h3>Office Supplies & Accessories</h3>
+                    <p>Your one-stop shop for all office essentials, providing quality products at unbeatable prices.</p>
+                    <p><strong>📍 Address:</strong> P.O. Box 61612 CITY Square, Agah Khan Walk</p>
+                    <p><strong>📞 Phone:</strong> +254 701085375</p>
+                    <p><strong>📧 Email:</strong> support@officesupplies.com</p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-section links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Social Media -->
+                <div class="footer-section social">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class='bx bxl-facebook'></i></a>
+                        <a href="#"><i class='bx bxl-twitter'></i></a>
+                        <a href="#"><i class='bx bxl-instagram'></i></a>
+                        <a href="#"><i class='bx bxl-linkedin'></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="footer-bottom">
+                <p>&copy; 2025 Office Supplies & Accessories. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+    <script src="script.js"></script>
+
+</body>
+
+
+</html>
